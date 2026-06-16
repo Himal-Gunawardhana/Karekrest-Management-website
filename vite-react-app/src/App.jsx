@@ -81,7 +81,7 @@ export default function App() {
       <nav className={scrolled ? 'scrolled' : ''} style={{ position:'fixed', top:0, left:0, right:0, zIndex:100, padding: scrolled ? '12px 0' : '22px 0', background: scrolled ? undefined : 'transparent', transition:'all .35s ease' }}>
         <div className="max-w-7xl" style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
           <button onClick={() => goto('home')} style={{ display:'flex', alignItems:'center', gap:12, background:'none', border:'none', cursor:'pointer' }}>
-            <div style={{ width:44, height:44, borderRadius:'50%', background:'linear-gradient(135deg,var(--amethyst),var(--accent))', display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'1rem', boxShadow:'0 4px 16px rgba(139,92,246,.45)' }}>KM</div>
+            <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 4px 16px rgba(59,130,246,.45)' }} />
             <span style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'1.4rem', color: scrolled ? '#071739' : '#fff', letterSpacing:'-0.5px', transition:'color .3s' }}>KAREKREST</span>
           </button>
 
@@ -92,9 +92,9 @@ export default function App() {
                 {id}
               </button>
             ))}
-            <button onClick={() => goto('contact')} style={{ padding:'11px 26px', borderRadius:999, background:'linear-gradient(135deg,var(--amethyst),var(--coral))', color:'#fff', border:'none', cursor:'pointer', fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'.9rem', boxShadow:'0 6px 20px rgba(139,92,246,.4)', transition:'all .3s' }}
-              onMouseEnter={e => { e.target.style.transform='translateY(-2px)'; e.target.style.boxShadow='0 10px 28px rgba(244,63,94,.5)'; }}
-              onMouseLeave={e => { e.target.style.transform=''; e.target.style.boxShadow='0 6px 20px rgba(139,92,246,.4)'; }}>
+            <button onClick={() => goto('contact')} style={{ padding:'11px 26px', borderRadius:999, background:'linear-gradient(135deg,var(--amethyst),var(--coral))', color:'#fff', border:'none', cursor:'pointer', fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'.9rem', boxShadow:'0 6px 20px rgba(59,130,246,.4)', transition:'all .3s' }}
+              onMouseEnter={e => { e.target.style.transform='translateY(-2px)'; e.target.style.boxShadow='0 10px 28px rgba(96,165,250,.5)'; }}
+              onMouseLeave={e => { e.target.style.transform=''; e.target.style.boxShadow='0 6px 20px rgba(59,130,246,.4)'; }}>
               Contact Us
             </button>
           </div>
@@ -150,7 +150,7 @@ export default function App() {
                 <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop" alt="Operations"/>
               </div>
               <div className="about-float-card">
-                <Target size={36} color="#8B5CF6" style={{ marginBottom:12 }}/>
+                <Target size={36} color="#3B82F6" style={{ marginBottom:12 }}/>
                 <div style={{ fontFamily:'Sora,sans-serif', fontWeight:700, color:'#07213F', fontSize:'1rem', marginBottom:6 }}>Centralized Support</div>
                 <div style={{ fontSize:'.82rem', color:'#5A6A7E', lineHeight:1.6 }}>Structured management, compliance readiness &amp; operational improvement systems.</div>
               </div>
@@ -281,7 +281,7 @@ export default function App() {
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10, marginTop:'auto' }}>
                 {["Project coordination","Compliance readiness","Workforce dev. planning","Vendor coordination","Documentation systems","Due diligence prep"].map((item,i)=>(
                   <div key={i} style={{ display:'flex', alignItems:'center', gap:8, fontSize:'.88rem', fontWeight:600, color:'#07213F' }}>
-                    <CheckCircle2 size={15} color="#8B5CF6"/> {item}
+                    <CheckCircle2 size={15} color="#3B82F6"/> {item}
                   </div>
                 ))}
               </div>
@@ -295,7 +295,7 @@ export default function App() {
               <div style={{ position:'relative', zIndex:1, marginTop:'auto' }}>
                 {["Employee onboarding","Compliance training","Safety awareness","Manufacturing readiness","Leadership development","Skills development"].map((item,i)=>(
                   <div key={i} className="workforce-item">
-                    <Target size={17} color="#F43F5E"/> {item}
+                    <Target size={17} color="#60A5FA"/> {item}
                   </div>
                 ))}
               </div>
@@ -402,7 +402,7 @@ export default function App() {
           <div style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr', gap:'3rem', marginBottom:48 }}>
             <div>
               <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:20 }}>
-                <div style={{ width:40, height:40, borderRadius:'50%', background:'linear-gradient(135deg,#1A5FD4,#07213F)', display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', fontFamily:'Sora,sans-serif', fontWeight:800 }}>KM</div>
+                <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ width: 40, height: 40, borderRadius: '50%', objectFit: 'cover' }} />
                 <span style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'1.2rem', color:'#fff' }}>KAREKREST</span>
               </div>
               <p style={{ color:'rgba(255,255,255,.4)', lineHeight:1.75, fontSize:'.9rem', maxWidth:360 }}>

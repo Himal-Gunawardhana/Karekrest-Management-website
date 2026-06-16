@@ -22,12 +22,12 @@ export default {
           dark: '#00B8D4',
         },
         amethyst: {
-          DEFAULT: '#8B5CF6',
-          dark: '#7C3AED',
+          DEFAULT: '#3B82F6',
+          dark: '#1E40AF',
         },
         coral: {
-          DEFAULT: '#F43F5E',
-          dark: '#E11D48',
+          DEFAULT: '#60A5FA',
+          dark: '#2563EB',
         },
         emerald: {
           DEFAULT: '#10B981',

@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <div className="logo-icon">KM</div>
+          <img src="/karekrestlogo.jpg" alt="KareKRest Logo" className="logo-icon w-10 h-10 object-cover rounded-full inline-block mr-2" />
           KAREKREST
         </Link>
         
