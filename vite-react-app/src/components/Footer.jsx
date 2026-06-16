@@ -8,9 +8,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-700">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <img src="/karekrestlogo.jpg" alt="KareKRest Logo" className="w-10 h-10 object-cover rounded-full" />
-              <h3 className="text-white mb-0" style={{paddingBottom: 0}}>KareKRest Management LLC</h3>
+            <div className="flex items-center mb-4">
+              <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
             </div>
             <p className="text-white-80 text-sm max-w-md">
               Management, Compliance, Consulting & Operational Excellence. Supporting businesses, manufacturing projects, regulated operations, and affiliated operating companies.

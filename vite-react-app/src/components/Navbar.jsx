@@ -15,8 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src="/karekrestlogo.jpg" alt="KareKRest Logo" className="logo-icon w-10 h-10 object-cover rounded-full inline-block mr-2" />
-          KAREKREST
+          <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
         </Link>
         
         <div className="mobile-menu-btn" onClick={toggleMenu}>

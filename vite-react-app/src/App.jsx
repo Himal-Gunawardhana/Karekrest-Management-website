@@ -80,9 +80,8 @@ export default function App() {
       {/* NAV */}
       <nav className={scrolled ? 'scrolled' : ''} style={{ position:'fixed', top:0, left:0, right:0, zIndex:100, padding: scrolled ? '12px 0' : '22px 0', background: scrolled ? undefined : 'transparent', transition:'all .35s ease' }}>
         <div className="max-w-7xl" style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
-          <button onClick={() => goto('home')} style={{ display:'flex', alignItems:'center', gap:12, background:'none', border:'none', cursor:'pointer' }}>
-            <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 4px 16px rgba(59,130,246,.45)' }} />
-            <span style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'1.4rem', color: scrolled ? '#071739' : '#fff', letterSpacing:'-0.5px', transition:'color .3s' }}>KAREKREST</span>
+          <button onClick={() => goto('home')} style={{ display:'flex', alignItems:'center', background:'none', border:'none', cursor:'pointer' }}>
+            <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ height: 64, width: 'auto', objectFit: 'contain' }} />
           </button>
 
           <div style={{ display:'flex', gap:32, alignItems:'center' }} className="desktop-nav">
@@ -401,9 +400,8 @@ export default function App() {
         <div className="max-w-7xl">
           <div style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr', gap:'3rem', marginBottom:48 }}>
             <div>
-              <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:20 }}>
-                <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ width: 40, height: 40, borderRadius: '50%', objectFit: 'cover' }} />
-                <span style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'1.2rem', color:'#fff' }}>KAREKREST</span>
+              <div style={{ display:'flex', alignItems:'center', marginBottom:20 }}>
+                <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
               </div>
               <p style={{ color:'rgba(255,255,255,.4)', lineHeight:1.75, fontSize:'.9rem', maxWidth:360 }}>
                 Management, Compliance, Consulting & Operational Excellence — supporting businesses, manufacturing projects, regulated operations, and affiliated operating companies.
