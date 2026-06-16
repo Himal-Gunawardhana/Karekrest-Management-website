@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-top grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-700">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <img src="/karekrestlogo.jpg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
+              <img src="/karekrestlogo.svg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
             </div>
             <p className="text-white-80 text-sm max-w-md">
               Management, Compliance, Consulting & Operational Excellence. Supporting businesses, manufacturing projects, regulated operations, and affiliated operating companies.
