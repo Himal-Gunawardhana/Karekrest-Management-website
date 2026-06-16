@@ -81,7 +81,9 @@ export default function App() {
       <nav className={scrolled ? 'scrolled' : ''} style={{ position:'fixed', top:0, left:0, right:0, zIndex:100, padding: scrolled ? '12px 0' : '22px 0', background: scrolled ? undefined : 'transparent', transition:'all .35s ease' }}>
         <div className="max-w-7xl" style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
           <button onClick={() => goto('home')} style={{ display:'flex', alignItems:'center', background:'none', border:'none', cursor:'pointer', padding: 0 }}>
-            <img src="/karekrestlogo.svg" alt="KareKRest Logo" style={{ height: 64, width: 'auto', objectFit: 'contain' }} />
+            <div style={{ background: '#fff', padding: '6px 16px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/karekrestlogo.svg" alt="KareKRest Logo" style={{ height: 52, width: 'auto', objectFit: 'contain' }} />
+            </div>
           </button>
 
           <div style={{ display:'flex', gap:32, alignItems:'center' }} className="desktop-nav">
@@ -401,7 +403,9 @@ export default function App() {
           <div style={{ display:'grid', gridTemplateColumns:'2fr 1fr 1fr', gap:'3rem', marginBottom:48 }}>
             <div>
               <div style={{ display:'flex', alignItems:'center', marginBottom:20 }}>
-                <img src="/karekrestlogo.svg" alt="KareKRest Logo" style={{ height: 50, width: 'auto', objectFit: 'contain' }} />
+                <div style={{ background: '#fff', padding: '6px 16px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src="/karekrestlogo.svg" alt="KareKRest Logo" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
+                </div>
               </div>
               <p style={{ color:'rgba(255,255,255,.4)', lineHeight:1.75, fontSize:'.9rem', maxWidth:360 }}>
                 Management, Compliance, Consulting & Operational Excellence — supporting businesses, manufacturing projects, regulated operations, and affiliated operating companies.
