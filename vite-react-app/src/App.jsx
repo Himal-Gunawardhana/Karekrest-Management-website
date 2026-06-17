@@ -213,10 +213,10 @@ export default function App() {
       {/* CONSULTING */}
       <section id="consulting" className="consulting-section">
         <div className="max-w-7xl">
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 2fr', gap:'4rem', alignItems:'start' }}>
-            <div>
+          <div style={{ display:'flex', flexDirection:'column', gap:'3rem' }}>
+            <div style={{ maxWidth: '900px' }}>
               <div className="section-label" style={{ color:'#6BABFF' }}>Expert Guidance</div>
-              <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'2.4rem', color:'#fff', lineHeight:1.15, marginBottom:20 }}>International Business,<br/>Compliance &<br/>Market Entry Consulting</h2>
+              <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'2.4rem', color:'#fff', lineHeight:1.15, marginBottom:20 }}>International Business, Compliance & Market Entry Consulting</h2>
               <p style={{ color:'rgba(255,255,255,.6)', lineHeight:1.8, marginBottom:16, fontSize:'1rem' }}>
                 KareKRest Management LLC provides consulting, compliance coordination, operational improvement, workforce development, quality systems support, and project planning services to businesses operating in the United States and internationally.
               </p>
@@ -230,11 +230,20 @@ export default function App() {
                 KareKRest Management LLC provides consulting, management support, operational improvement assistance, compliance coordination, workforce development support, and project planning services. The company does not provide legal advice, engineering services, accounting services, customs brokerage services, regulatory approvals, or professional licensing services. Clients remain responsible for obtaining all required permits, certifications, inspections, licenses, and professional services applicable to their operations.
               </div>
             </div>
-            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1.25rem' }}>
+            
+            <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(320px, 1fr))', gap:'1.5rem', alignItems:'start' }}>
               {consulting.map((c, i) => (
-                <div key={i} className="consulting-area-card">
+                <div key={i} className="consulting-area-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <h4>{c.title}</h4>
-                  <ul>{c.items.map((item,j) => <li key={j}>{item}</li>)}</ul>
+                  <ul style={{ flexGrow: 1 }}>{c.items.map((item,j) => <li key={j}>{item}</li>)}</ul>
+                  {c.clients && (
+                    <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                      <strong style={{ color: '#fff', fontSize: '0.85rem', display: 'block', marginBottom: '8px' }}>Target Clients:</strong>
+                      <ul style={{ paddingLeft: '1.2rem', marginBottom: 0 }}>
+                        {c.clients.map((client, k) => <li key={k} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', marginBottom: '4px' }}>{client}</li>)}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
