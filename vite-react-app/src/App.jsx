@@ -83,7 +83,7 @@ export default function App() {
     }
   };
 
-  const navItems = ['about','services','consulting','compliance','industry','faq','contact'];
+  const navItems = ['about','services','consulting','compliance','industry','faq'];
 
   return (
     <>
