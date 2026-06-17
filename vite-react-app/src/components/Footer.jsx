@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-disclaimer mb-6 text-xs text-white-50 text-center max-w-4xl mx-auto">
-          KareKRest Management LLC does not provide legal services, engineering services, accounting services, regulatory approvals, or professional licensing services. Clients remain responsible for compliance with all applicable laws, regulations, permits, certifications, inspections, and professional requirements.
+          KareKRest Management LLC provides consulting, management support, operational improvement assistance, compliance coordination, workforce development support, and project planning services. The company does not provide legal advice, engineering services, accounting services, customs brokerage services, regulatory approvals, or professional licensing services. Clients remain responsible for obtaining all required permits, certifications, inspections, licenses, and professional services applicable to their operations.
         </div>
 
         <div className="footer-bottom flex flex-col md:flex-row justify-between items-center text-xs text-white-50 pt-4 border-t border-gray-700">

@@ -16,15 +16,21 @@ const consulting = [
   { title: "Manufacturing Readiness", items: ["Facility readiness planning","Production workflow documentation","Supplier qualification support","Traceability system support"] },
   { title: "Healthcare Operations", items: ["Policy development support","Documentation system support","Quality improvement support","Workforce training support"] },
   { title: "Business Development", items: ["Due diligence preparation","Data room organization","Lender-readiness support","Economic development packages"] },
+  { title: "Export Readiness & Market Access", items: ["U.S. market entry planning","Canadian market entry planning","Export readiness assessments","Product commercialization planning","Packaging readiness guidance","Labeling readiness guidance","Supply chain planning","Documentation systems","Quality system awareness","Food safety readiness awareness","Manufacturing readiness planning","Distribution strategy support","Trade show preparation","Buyer outreach preparation","Due diligence preparation"], clients: ["Food processors","Agricultural processors","Beverage companies","Spice exporters","Herbal product companies","Charcoal producers","Agricultural cooperatives","Manufacturers","Small and growing businesses"] },
+  { title: "International Business Development Support", items: ["Strategic planning","Market evaluation","Operational readiness","Business planning","Documentation systems","Risk awareness","Investor readiness","Data room preparation","Capital readiness support","Workforce development planning"] },
 ];
 
 const compliance_items = ["Documentation accuracy","Regulatory awareness","Risk reduction","Workforce accountability","Quality systems","Traceability","Internal auditing","Corrective action","Continuous improvement"];
 
 const training_categories = [
-  { title: "Food Safety & Regulatory", items: ["HACCP Fundamentals","Advanced HACCP Training","FSMA Preventive Controls (PCQI)","Good Manufacturing Practices (GMP)"] },
-  { title: "Quality Systems", items: ["ISO 9001 Internal Auditor","CAPA Management","Root Cause Analysis","Lean Six Sigma Yellow Belt"] },
+  { title: "Food Safety & Regulatory", items: ["HACCP Fundamentals","Advanced HACCP Training","Managing HACCP Essentials","Managing HACCP Essentials (FDA Perspective)","FSPCA Preventive Controls Qualified Individual (PCQI)","FSPCA Food Defense Courses","Animal Food CGMP","Good Manufacturing Practices (GMP)"] },
+  { title: "Quality Systems", items: ["ISO 9001 Foundations","ISO 9001 Internal Auditor Training","CAPA Management","Root Cause Analysis"] },
+  { title: "Continuous Improvement", items: ["Lean Six Sigma Yellow Belt"] },
   { title: "Workplace Safety", items: ["OSHA 30 General Industry","OSHA Injury & Illness Recordkeeping"] },
-  { title: "Water & Manufacturing", items: ["Water Treatment Fundamentals","Bottled Water Industry Training"] },
+  { title: "Environmental & Sustainability", items: ["ISO 14001 Foundations","ESG Reporting","Sustainability Management","Circular Economy"] },
+  { title: "Operations & Supply Chain", items: ["Supply Chain Management","Operations Management"] },
+  { title: "Water Industry", items: ["Water Treatment Fundamentals","Bottled Water Industry Training"] },
+  { title: "Business & Project Management", items: ["Financial Accounting","Project Management Training","Google Project Management"] }
 ];
 
 const industry_engagement = ["Lenders", "Investors", "USDA Reviewers", "SBA Reviewers", "City Officials", "State Economic Development Officials", "Manufacturing Partners", "Operating Companies", "Clients"];
@@ -37,6 +43,10 @@ const faqs = [
   { q: "What is Project Spring?", a: "Project Spring is a phased manufacturing and economic development initiative. Phase 1 is Salem Purified Water LLC." },
   { q: "Does KareKRest provide legal or engineering advice?", a: "No. KareKRest Management LLC does not provide legal, engineering, accounting, or professional licensing services." },
   { q: "How can clients contact KareKRest Management?", a: "Call (573) 509-5373 or email admin@karekrestmgmt.com." },
+  { q: "Does KareKRest Management help African companies export to the United States?", a: "Yes. KareKRest Management LLC provides export readiness, documentation support, operational planning, quality systems awareness, and market-entry consulting for businesses seeking access to North American markets." },
+  { q: "Does KareKRest Management help companies export to Canada?", a: "Yes. The company supports export readiness and market-entry planning for businesses evaluating opportunities in Canada." },
+  { q: "Does KareKRest Management provide consulting for U.S. companies?", a: "Yes. Services are available to U.S.-based businesses seeking support in compliance readiness, workforce development, quality systems, operational excellence, and strategic planning." },
+  { q: "Does KareKRest Management provide regulatory approvals?", a: "No. KareKRest Management LLC does not issue permits, licenses, certifications, regulatory approvals, legal opinions, or engineering approvals." }
 ];
 
 function Accordion({ title, children }) {
@@ -136,7 +146,7 @@ export default function App() {
               View Our Services <ArrowRight size={18}/>
             </button>
             <button className="btn-hero-ghost" onClick={() => goto('contact')}>
-              Contact KareKRest
+              Contact KareKRest Management LLC
             </button>
           </div>
         </div>
@@ -206,19 +216,18 @@ export default function App() {
           <div style={{ display:'grid', gridTemplateColumns:'1fr 2fr', gap:'4rem', alignItems:'start' }}>
             <div>
               <div className="section-label" style={{ color:'#6BABFF' }}>Expert Guidance</div>
-              <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'2.4rem', color:'#fff', lineHeight:1.15, marginBottom:20 }}>Consulting<br/>Services</h2>
-              <p style={{ color:'rgba(255,255,255,.6)', lineHeight:1.8, marginBottom:32, fontSize:'1rem' }}>
-                Consulting support for businesses seeking to improve compliance readiness, documentation systems, workforce development, quality management, operational performance, and project execution.
+              <h2 style={{ fontFamily:'Sora,sans-serif', fontWeight:800, fontSize:'2.4rem', color:'#fff', lineHeight:1.15, marginBottom:20 }}>International Business,<br/>Compliance &<br/>Market Entry Consulting</h2>
+              <p style={{ color:'rgba(255,255,255,.6)', lineHeight:1.8, marginBottom:16, fontSize:'1rem' }}>
+                KareKRest Management LLC provides consulting, compliance coordination, operational improvement, workforce development, quality systems support, and project planning services to businesses operating in the United States and internationally.
               </p>
-              <div style={{ marginBottom:16 }}>
-                {["Food and beverage startups","Manufacturing businesses","Healthcare organizations","Agricultural processors","Regulated operations"].map((item,i)=>(
-                  <div key={i} style={{ display:'flex', alignItems:'center', gap:10, marginBottom:12, color:'rgba(255,255,255,.7)', fontSize:'.9rem' }}>
-                    <CheckCircle2 size={16} color="#10B981"/> {item}
-                  </div>
-                ))}
-              </div>
-              <div className="disclaimer-card">
-                Important: KareKRest Management LLC does not provide legal advice, engineering services, accounting services, regulatory approvals, or professional licensing services.
+              <p style={{ color:'rgba(255,255,255,.6)', lineHeight:1.8, marginBottom:16, fontSize:'1rem' }}>
+                The company specializes in helping organizations improve operational readiness, documentation systems, quality management practices, workforce development programs, compliance awareness, and strategic planning.
+              </p>
+              <p style={{ color:'rgba(255,255,255,.6)', lineHeight:1.8, marginBottom:32, fontSize:'1rem' }}>
+                KareKRest Management LLC also supports businesses located in Africa and West Africa that are seeking to access, export to, or better understand U.S. and Canadian markets.
+              </p>
+              <div className="disclaimer-card" style={{ fontSize: '.8rem', lineHeight: 1.6 }}>
+                KareKRest Management LLC provides consulting, management support, operational improvement assistance, compliance coordination, workforce development support, and project planning services. The company does not provide legal advice, engineering services, accounting services, customs brokerage services, regulatory approvals, or professional licensing services. Clients remain responsible for obtaining all required permits, certifications, inspections, licenses, and professional services applicable to their operations.
               </div>
             </div>
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1.25rem' }}>
@@ -228,6 +237,42 @@ export default function App() {
                   <ul>{c.items.map((item,j) => <li key={j}>{item}</li>)}</ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO WE HELP */}
+      <section style={{ padding:'100px 0', background:'#fff' }}>
+        <div className="max-w-7xl">
+          <div style={{ textAlign:'center', marginBottom:56 }}>
+            <div className="section-label" style={{ justifyContent:'center' }}>Target Clients</div>
+            <h2 className="section-title">Who We Help</h2>
+          </div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'2rem' }}>
+            <div style={{ background:'#F7F9FF', padding:'32px', borderRadius:'16px', border:'1px solid rgba(26,95,212,.08)' }}>
+              <h3 style={{ fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'1.2rem', color:'#07213F', marginBottom:20 }}>United States</h3>
+              <ul style={{ padding:0, margin:0, listStyle:'none' }}>
+                {["Manufacturing companies","Food processors","Beverage companies","Healthcare organizations","Assisted living operators","Agricultural businesses","Startups","Economic development projects"].map((item,i) => (
+                  <li key={i} style={{ display:'flex', alignItems:'start', gap:10, fontSize:'.9rem', color:'#5A6A7E', marginBottom:10 }}><CheckCircle2 size={16} color="#3B82F6" style={{flexShrink:0, marginTop:2}}/> {item}</li>
+                ))}
+              </ul>
+            </div>
+            <div style={{ background:'#F7F9FF', padding:'32px', borderRadius:'16px', border:'1px solid rgba(26,95,212,.08)' }}>
+              <h3 style={{ fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'1.2rem', color:'#07213F', marginBottom:20 }}>Canada</h3>
+              <ul style={{ padding:0, margin:0, listStyle:'none' }}>
+                {["Food and beverage companies","Agricultural processors","Importers and distributors"].map((item,i) => (
+                  <li key={i} style={{ display:'flex', alignItems:'start', gap:10, fontSize:'.9rem', color:'#5A6A7E', marginBottom:10 }}><CheckCircle2 size={16} color="#3B82F6" style={{flexShrink:0, marginTop:2}}/> {item}</li>
+                ))}
+              </ul>
+            </div>
+            <div style={{ background:'#F7F9FF', padding:'32px', borderRadius:'16px', border:'1px solid rgba(26,95,212,.08)' }}>
+              <h3 style={{ fontFamily:'Sora,sans-serif', fontWeight:700, fontSize:'1.2rem', color:'#07213F', marginBottom:20 }}>Africa & West Africa</h3>
+              <ul style={{ padding:0, margin:0, listStyle:'none' }}>
+                {["Exporters","Agricultural processors","Food manufacturers","Beverage producers","Spice companies","Herbal product companies","Charcoal producers","Cooperatives","Small and medium-sized enterprises"].map((item,i) => (
+                  <li key={i} style={{ display:'flex', alignItems:'start', gap:10, fontSize:'.9rem', color:'#5A6A7E', marginBottom:10 }}><CheckCircle2 size={16} color="#3B82F6" style={{flexShrink:0, marginTop:2}}/> {item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -428,7 +473,7 @@ export default function App() {
           <div className="divider"/>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:16 }}>
             <p className="footer-disclaimer" style={{ maxWidth:'70%' }}>
-              KareKRest Management LLC does not provide legal services, engineering services, accounting services, regulatory approvals, or professional licensing services. Clients remain responsible for compliance with all applicable laws, regulations, permits, certifications, and professional requirements.
+              KareKRest Management LLC provides consulting, management support, operational improvement assistance, compliance coordination, workforce development support, and project planning services. The company does not provide legal advice, engineering services, accounting services, customs brokerage services, regulatory approvals, or professional licensing services. Clients remain responsible for obtaining all required permits, certifications, inspections, licenses, and professional services applicable to their operations.
             </p>
             <p className="footer-copy">&copy; {new Date().getFullYear()} KareKRest Management LLC. Owned by Paye Holdings LLC.</p>
           </div>
